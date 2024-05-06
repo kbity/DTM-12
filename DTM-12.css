@@ -905,66 +905,30 @@ span[class*=botTag-] {
   line-height: 20px;
 }
 
+  /* AMOLED Discord */
 :root {
-  /* ignore these, unless you wanna mess with them, then go for it. they may be removed at any time, though. */
-  --lightness-600-660: 25%;
-  --lightness-700-760: 15%;
-  --lightness-800-860: 10%;
-  --lightness-900: 5%;
-  --primary-100: hsl(var(--primary-100-hsl)/1);
-  --primary-100-hsl: 0 calc(var(--saturation-factor, 1)*0%) 97.6%;
-  --primary-130: hsl(var(--primary-130-hsl)/1);
-  --primary-130-hsl: 220 calc(var(--saturation-factor, 1)*13%) 95.5%;
-  --primary-160: hsl(var(--primary-160-hsl)/1);
-  --primary-160-hsl: 210 calc(var(--saturation-factor, 1)*11.1%) 92.9%;
-  --primary-200: hsl(var(--primary-200-hsl)/1);
-  --primary-200-hsl: 216 calc(var(--saturation-factor, 1)*9.8%) 90%;
-  --primary-230: hsl(var(--primary-230-hsl)/1);
-  --primary-230-hsl: 210 calc(var(--saturation-factor, 1)*9.1%) 87.1%;
-  --primary-260: hsl(var(--primary-260-hsl)/1);
-  --primary-260-hsl: 214 calc(var(--saturation-factor, 1)*8.4%) 83.7%;
-  --primary-300: hsl(var(--primary-300-hsl)/1);
-  --primary-300-hsl: 210 calc(var(--saturation-factor, 1)*9.3%) 78.8%;
-  --primary-330: hsl(var(--primary-330-hsl)/1);
-  --primary-330-hsl: 215 calc(var(--saturation-factor, 1)*8.8%) 73.3%;
-  --primary-345: hsl(var(--primary-345-hsl)/1);
-  --primary-345-hsl: 214 calc(var(--saturation-factor, 1)*8.4%) 67.5%;
-  --primary-360: hsl(var(--primary-360-hsl)/1);
-  --primary-360-hsl: 214 calc(var(--saturation-factor, 1)*8.1%) 61.2%;
-  --primary-400: hsl(var(--primary-400-hsl)/1);
-  --primary-400-hsl: 223 calc(var(--saturation-factor, 1)*5.8%) 52.9%;
-  --primary-430: hsl(var(--primary-430-hsl)/1);
-  --primary-430-hsl: 229 calc(var(--saturation-factor, 1)*4.8%) 44.9%;
-  --primary-460: hsl(var(--primary-460-hsl)/1);
-  --primary-460-hsl: 228 calc(var(--saturation-factor, 1)*5.2%) 38%;
-  --primary-500: hsl(var(--primary-500-hsl)/1);
-  --primary-500-hsl: 228 calc(var(--saturation-factor, 1)*6%) 32.5%;
-  --primary-530: hsl(var(--primary-530-hsl)/1);
-  --primary-530-hsl: 227 calc(var(--saturation-factor, 1)*6.5%) 27.3%;
-  --primary-560: hsl(var(--primary-560-hsl)/1);
-  --primary-560-hsl: 225 calc(var(--saturation-factor, 1)*6.7%) 23.5%;
+  /* Dark gray color adjustments */
+  --lightness-600-660: 15%; /* Darker */
+  --lightness-700-760: 10%; /* Darker */
+  --lightness-800-860: 5%;  /* Darkest */
+  --lightness-900: 2%;      /* Almost black */
+
+  /* Primary color shades in dark gray */
+  --primary-100-hsl: 0 0% 97.6%; /* Lightest gray */
+  --primary-200-hsl: 0 0% 78.8%;
+  --primary-300-hsl: 0 0% 60%;
+  --primary-400-hsl: 0 0% 52.9%;
+  --primary-500-hsl: 0 0% 32.5%;
+  --primary-600-hsl: 0 0% 20.6%;
+  --primary-700-hsl: 0 0% 12.5%;
+  --primary-800-hsl: 0 0% 7.3%;
+  --primary-900-hsl: 0 0% 0.8%; /* Almost black */
+  
+  /* Use the adjusted lightness values */
   --primary-600: hsl(var(--primary-600-hsl)/1);
-  --primary-600-hsl: 223 calc(var(--saturation-factor, 1)*6.7%) calc(var(--lightness-600-660, 0) + 20.6%);
-  --primary-630: hsl(var(--primary-630-hsl)/1);
-  --primary-630-hsl: 220 calc(var(--saturation-factor, 1)*6.5%) calc(var(--lightness-600-660, 0) + 18%);
-  --primary-645: hsl(var(--primary-645-hsl)/1);
-  --primary-645-hsl: 220 calc(var(--saturation-factor, 1)*7%) calc(var(--lightness-600-660, 0) + 16.9%);
-  --primary-660: hsl(var(--primary-660-hsl)/1);
-  --primary-660-hsl: 228 calc(var(--saturation-factor, 1)*6.7%) calc(var(--lightness-600-660, 0) + 14.7%);
   --primary-700: hsl(var(--primary-700-hsl)/1);
-  --primary-700-hsl: 225 calc(var(--saturation-factor, 1)*6.3%) calc(var(--lightness-700-760, 0) + 12.5%);
-  --primary-730: hsl(var(--primary-730-hsl)/1);
-  --primary-730-hsl: 225 calc(var(--saturation-factor, 1)*7.1%) calc(var(--lightness-700-760, 0) + 11%);
-  --primary-760: hsl(var(--primary-760-hsl)/1);
-  --primary-760-hsl: 220 calc(var(--saturation-factor, 1)*6.4%) calc(var(--lightness-700-760, 0) + 9.2%);
   --primary-800: hsl(var(--primary-800-hsl)/1);
-  --primary-800-hsl: 220 calc(var(--saturation-factor, 1)*8.1%) calc(var(--lightness-800-860, 0) + 7.3%);
-  --primary-830: hsl(var(--primary-830-hsl)/1);
-  --primary-830-hsl: 240 calc(var(--saturation-factor, 1)*4%) calc(var(--lightness-800-860, 0) + 4.9%);
-  --primary-860: hsl(var(--primary-860-hsl)/1);
-  --primary-860-hsl: 240 calc(var(--saturation-factor, 1)*7.7%) calc(var(--lightness-800-860, 0) + 2.5%);
   --primary-900: hsl(var(--primary-900-hsl)/1);
-  --primary-900-hsl: 0 calc(var(--saturation-factor, 1)*0%) calc(var(--lightness-900, 0) + 0.8%);
 }
 
 .theme-dark,
