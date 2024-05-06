@@ -931,7 +931,7 @@ span[class*=botTag-] {
   --primary-900: hsl(var(--primary-900-hsl)/1);
 }
 
-.theme-dark,
+/*.theme-dark,
 html.theme-dark .theme-light .root_a28985,
 .theme-light.popout_a6e77f {
   --activity-card-background: var(--primary-830) !important;
@@ -1809,4 +1809,4 @@ body .contentWrapper-3RqEiS .accordionContainer-vSTU_l {
 }
 :is(.theme-dark, .theme-midnight) .sidebar_e031be .panels__58331 > div, :is(.theme-dark, .theme-midnight) .sidebar_e031be .panels__58331 .wrapper_e832ee > div {
   background: var(--background-primary) !important;
-}
+}*/
